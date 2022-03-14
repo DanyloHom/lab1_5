@@ -25,18 +25,20 @@ bool Date::Init(int d, int m, int y)
 	}
 	if (m == 2) {
 		if (y % 4 == 0 || y % 100 == 0 || y % 400 == 0) {
-			if (d > 0 && d <= 29)
+			if (d > 0 && d <= 29){
 				setDay(d);
-			setMounth(m);
-			setYear(y);
-			return true;
+				setMounth(m);
+				setYear(y);
+				return true;
+			}
 		}
 		else {
-			if (d > 0 && d <= 28)
+			if (d > 0 && d <= 28){
 				setDay(d);
-			setMounth(m);
-			setYear(y);
-			return true;
+				setMounth(m);
+				setYear(y);
+				return true;
+			}
 		}
 
 	}
